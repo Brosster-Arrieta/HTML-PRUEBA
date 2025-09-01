@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --Color-Primario: #1A2A80;
+    --Color-Secundario: #3B38A0;
+    --Color-Tercero: #7A85C1;
+    --Color-Hover: #B2B0E8;
+
+    --Fuente-Montserrat: 'Montserrat', sans-serif;
+    --Fuente-Krona: 'Krona One', sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+    background-color: var(--Color-Primario);
+    color: var(--Color-Secundario);
+    box-sizing: border-box;
+}
+
+.Header {
+    padding: 2% 0% 0% 15%;
+
+}
+
+.Header--Nav {
+    display: flex;
+    gap: 80px;
+}
+
+.Header--Nav--Link {
+    color: var(--Color-Tercero);
+    font-family: var(--Fuente-Montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Titulo-Destaque {
+    color: var(--Color-Tercero);
+}
+
+.Presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+}
+
+.Presentacion--Contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Presentacion--Contenido--Titulo {
+    font-size: 36px;
+    font-family: var(--Fuente-Krona);
+}
+
+.Presentacion--Contenido--Texto {
+    font-size: 24px;
+    font-family: var(--Fuente-Montserrat);
+
+}
+
+.Presentacion--Enlaces--Titulo {
+    font-size: 24px;
+    font-family: var(--Fuente-Krona);
+    font-weight: 400;
+}
+
+.Presentacion--Enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.Presentacion--Enlaces--Link {
+    width: 378px;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--Fuente-Montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--Color-Secundario);
+    border: 2px solid var(--Color-Tercero);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.Presentacion--Enlaces--Link:hover {
+    background-color: var(--Color-Hover);
+}
+
+.Footer {
+    background-color: var(--Color-Tercero);
+    text-align: center;
+    padding: 24px;
+    color: var(--Color-Primario);
+    font-family: var(--Fuente-Montserrat);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.Imagen {
+    margin-left: 40px;
+}
